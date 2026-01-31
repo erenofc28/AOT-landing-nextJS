@@ -1,5 +1,16 @@
 @import "tailwindcss";
-
+@keyframes titleReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+    letter-spacing: 0.6em;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.35em;
+  }
+}
 body {
   font-family: 'Cinzel', serif;
 }
@@ -23,4 +34,8 @@ body {
 html, body {
   -ms-overflow-style: none;  /* IE & Edge */
   scrollbar-width: none;     /* Firefox */
+}
+html,
+body {
+  overflow-x: hidden;
 }
